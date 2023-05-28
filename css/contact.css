@@ -28,7 +28,6 @@ h1{
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-
 }
 
 form div {
@@ -71,41 +70,6 @@ input:focus,select:focus,textarea:focus{
 }
 
 
-/* #barsmenu{
-  display: none;
-}
-
-.hamburger-nav-container{
-  font-size: 23px;
-  list-style-type: none;
-  display: none;
-  background-color: rgb(103, 136, 136);
-}
-
-.hamburger-nav-container a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  font-weight: none;
-  font-size: large;
-  color: black;
-}
-
-.hamburger-nav-container a:hover{
-  color: rgb(198, 241, 248);
-  font-weight: bolder;
-  padding: 12px;
-  transition-delay: 0.1s;
-  transition-duration: 0.2s;
-}
-
-.hamburger-nav-container .hamburger-active {
-  color: #ffff;
-  font-size: larger;
-  font-weight: bolder;
-  padding: 10px;
-} */
 
 @media only screen and (max-width: 1200px) {
   .card-container {
@@ -116,7 +80,6 @@ input:focus,select:focus,textarea:focus{
     align-items: center;
     width: 80%;
   }
-
 
 }
 

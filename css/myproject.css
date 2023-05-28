@@ -29,7 +29,7 @@ label {
   color: white;
 }
 
-.project-form form input, textarea{
+  .project-form form input, textarea{
     width: 100%;
     padding: 8px;
     margin-top: 5px;
@@ -58,7 +58,6 @@ label {
   width: 49%;
   }
 
-
   .container-checkbox{
     display: flex;
     flex-wrap: wrap;
@@ -82,8 +81,6 @@ label {
     align-items: flex-start;
   }
 
-
-  
   .project-form form .input-project-image-group{
     width: 100%;
     padding: 0px;
@@ -134,13 +131,13 @@ label {
     font-size: 20px;
     font-weight: 700;
   }
-  
 
-/* project result */
+/* project result / card*/
 
 .container-project-result{
   margin: 10px auto;
 }
+
 h1{
   text-align: center;
   margin-bottom: 20px;
@@ -206,8 +203,6 @@ h1{
   text-align: ce;
   font-size: 15px;
   width: 49%;
-
-  
 }
 
 
@@ -256,7 +251,6 @@ h1{
   font-size: 20px;
 }
 
-
 .icon{
   display: grid;
   grid-template-columns: auto auto;
@@ -269,8 +263,7 @@ h1{
     align-items: center;
     width: 85%;
   }
-  
-  
+
   .card-container{
     display: grid;
     flex-wrap: wrap;
@@ -290,8 +283,9 @@ h1{
     display: block;
   }
 }
-@media only screen and (max-width: 900px) {
 
+@media only screen and (max-width: 900px) {
+  
   /* halaman detail my project */
   .project{
     display: flex;

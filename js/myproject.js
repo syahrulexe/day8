@@ -48,7 +48,8 @@ function addProject(event){
 
     renderProject();
 }
-// get distance(point of task 5)
+
+// get distance time(point of task 5)
 
 function getDistanceTime() {
   let timeStart = new Date(document.getElementById("input-start").value);
@@ -70,21 +71,21 @@ function getDistanceTime() {
   let distanceDay = Math.floor(   distance / (milisecond * secondInHours * hoursInDays));
 
   if (distanceYears >= 2){
-    return `Created since ${distanceYears} Years `;
+    return `Duration : ${distanceYears} Years `;
   } else if (distanceYears == 1){
-    return `Created since ${distanceYears} Year `;
+    return `Duration : ${distanceYears} Year `;
   } else if (distanceMonths >= 2){
-    return `Created since ${distanceMonths} Months`;
+    return `Duration : ${distanceMonths} Months`;
   } else if (distanceMonths == 1){
-    return `Created since ${distanceMonths} Month`;
+    return `Duration : ${distanceMonths} Month`;
   } else if (distanceWeek >= 2){
     return `Duration ${distanceWeek} Weeks`;
   } else if (distanceWeek == 1){
-    return `Duration ${distanceWeek} Week`;
+    return `Duration : ${distanceWeek} Week`;
   } else  if (distanceDay >= 2){
-    return `Created since ${distanceDay} Days`;
+    return `Duration : ${distanceDay} Days`;
   }else  if (distanceDay == 1){
-    return `Created since ${distanceDay} Day`;
+    return `Duration : ${distanceDay} Day`;
   } 
 }
 
@@ -109,7 +110,6 @@ function renderProject() {
           </div> 
         </div>
         `;
-        
     }
 }
 

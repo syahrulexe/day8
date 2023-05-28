@@ -22,14 +22,4 @@ function submitData() {
     let a = document.createElement("a");
     a.href = `mailto:${emailReceiver}?subject=${subject}&body=Hello my name is ${name}, ${subject} with me! ${message} call me on whatsapp ${phone}, tq`;
     a.click();
-
-    // let emailer = {
-    //     name,
-    //     email,
-    //     phone,
-    //     subject,
-    //     message,
-    //   };
-    
-      // console.log(emailer);
     }

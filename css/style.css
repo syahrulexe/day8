@@ -37,8 +37,6 @@ nav ul li a {
   color: rgb(85, 85, 85);
 }
 
-
-
 nav ul li .active {
   color: rgb(0, 0, 0);
   padding: 10px;
@@ -128,8 +126,6 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
 color: black;
 text-align: center;
 }
-
-
 
 .social-media i {
   margin: 10px auto;
