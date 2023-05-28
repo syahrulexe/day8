@@ -51,7 +51,7 @@ input,select,textarea {
 
 input:focus,select:focus,textarea:focus{
   outline: none;
-  border: 1px solid rgb(255, 0, 43);
+  border: 1px solid gold;
 }
 
 .container-button{
@@ -60,7 +60,7 @@ input:focus,select:focus,textarea:focus{
 }
   
 .container-button button{
-  background-color: rgb(255, 0, 43);
+  background-color: gold;
   color: black;
   padding: 6px 25px;
   border: none;

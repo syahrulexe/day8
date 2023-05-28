@@ -38,7 +38,7 @@ function addProject(event){
         checkboxCss,
         checkboxJavascript,
         checkboxJava,
-        postAt: new Date(),
+        distance: getDistanceTime(),
         image,
     };
 
@@ -48,7 +48,45 @@ function addProject(event){
 
     renderProject();
 }
+// get distance(point of task 5)
 
+function getDistanceTime() {
+  let timeStart = new Date(document.getElementById("input-start").value);
+  let timeEnd = new Date(document.getElementById("input-end").value);
+
+  let distance =  timeEnd - timeStart;
+  console.log(distance);
+
+  let milisecond = 1000 // 1 minute is 1000 milisecond 
+  let secondInHours = 3600 // 1 hour is 3600 second
+  let hoursInDays = 24 // 1 day is 24 hours
+  let daysInWeeks= 7 // 1 weeks is 7 days
+  let weeksInMonths = 4 // 1 month is 4 weeks
+  let monthsInYears = 12 // 1 year is 12 months
+
+  let distanceYears = Math.floor(  distance / (milisecond * secondInHours * hoursInDays * daysInWeeks * weeksInMonths * monthsInYears));
+  let distanceMonths = Math.floor(  distance / (milisecond * secondInHours * hoursInDays * daysInWeeks * weeksInMonths));
+  let distanceWeek = Math.floor(  distance / (milisecond * secondInHours * hoursInDays * daysInWeeks));
+  let distanceDay = Math.floor(   distance / (milisecond * secondInHours * hoursInDays));
+
+  if (distanceYears >= 2){
+    return `Created since ${distanceYears} Years `;
+  } else if (distanceYears == 1){
+    return `Created since ${distanceYears} Year `;
+  } else if (distanceMonths >= 2){
+    return `Created since ${distanceMonths} Months`;
+  } else if (distanceMonths == 1){
+    return `Created since ${distanceMonths} Month`;
+  } else if (distanceWeek >= 2){
+    return `Duration ${distanceWeek} Weeks`;
+  } else if (distanceWeek == 1){
+    return `Duration ${distanceWeek} Week`;
+  } else  if (distanceDay >= 2){
+    return `Created since ${distanceDay} Days`;
+  }else  if (distanceDay == 1){
+    return `Created since ${distanceDay} Day`;
+  } 
+}
 
 
 function renderProject() {
@@ -59,8 +97,7 @@ function renderProject() {
         <div class="card">
           <img src="${dataProject[i].image} " alt="inputan test">
           <h4 class="title"><a style="color: black;" href="detailproject.html">${dataProject[i].projectName} </a></h4>
-          <p style="font-size: 15px; color: grey">${getFullTime(dataProject[i].postAt)}</p>
-          <p style="font-size: 15px; color: grey">${getDistanceTime(dataProject[i].postAt)}</p>
+          <p style="font-size: 15px; color: grey">${dataProject[i].distance}</p>
           <p class="about">${dataProject[i].description} </p> 
           ${dataProject[i].checkboxHtml}
           ${dataProject[i].checkboxCss}
@@ -116,46 +153,3 @@ function getFullTime(time) {
 
 }
 
-// get distance(point of task 5)
-
-function getDistanceTime() {
-  let timeStart = new Date(document.getElementById("input-start").value);
-  let timeEnd = new Date(document.getElementById("input-end").value);
-
-  let distance =  timeEnd - timeStart;
-  console.log(distance);
-
-  let milisecond = 1000 // 1 minute is 1000 milisecond 
-  let secondInHours = 3600 // 1 hour is 3600 second
-  let hoursInDays = 24 // 1 day is 24 hours
-  let daysInWeeks= 7 // 1 weeks is 7 days
-  let weeksInMonths = 4 // 1 month is 4 weeks
-  let monthsInYears = 12 // 1 year is 12 months
-
-  let distanceYears = Math.floor(  distance / (milisecond * secondInHours * hoursInDays * daysInWeeks * weeksInMonths * monthsInYears));
-  let distanceMonths = Math.floor(  distance / (milisecond * secondInHours * hoursInDays * daysInWeeks * weeksInMonths));
-  let distanceWeek = Math.floor(  distance / (milisecond * secondInHours * hoursInDays * daysInWeeks));
-  let distanceDay = Math.floor(   distance / (milisecond * secondInHours * hoursInDays));
-
-  if (distanceYears >= 2){
-    return `Created since ${distanceYears} Years `;
-  } else if (distanceYears == 1){
-    return `Created since ${distanceYears} Year `;
-  } else if (distanceMonths >= 2){
-    return `Created since ${distanceMonths} Months`;
-  } else if (distanceMonths == 1){
-    return `Created since ${distanceMonths} Month`;
-  } else if (distanceWeek >= 2){
-    return `Duration ${distanceWeek} Weeks`;
-  } else if (distanceWeek == 1){
-    return `Duration ${distanceWeek} Week`;
-  } else  if (distanceDay >= 2){
-    return `Created since ${distanceDay} Days`;
-  }else  if (distanceDay == 1){
-    return `Created since ${distanceDay} Day`;
-  }
-  
- 
-
-    
-}

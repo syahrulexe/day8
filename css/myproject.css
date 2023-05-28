@@ -90,7 +90,6 @@ label {
     margin-top: 5px;
     margin-bottom: 20px;
     resize: none;
-    
     background-color: rgb(58, 58, 58);
     width: 100%;
     border: none;
@@ -104,7 +103,7 @@ label {
       color: rgb(0, 0, 0);
       padding: 8px;
       font-weight: 600;
-      background-color: rgb(255, 0, 43);
+      background-color: gold;
   }
 
   .project-form form .input-project-image-group label{
@@ -120,13 +119,13 @@ label {
     margin-top: 10px;
   }
 
-  input:focus,select:focus,textarea:focus{
+  input:focus, textarea:focus{
     outline: none;
-    border: 1px solid rgb(255, 0, 43);
+    border: 1px solid gold;
   }
   
   button{
-    background-color: rgb(255, 255, 255);
+    background-color: gold;
     color: black;
     padding: 6px 25px;
     border: none;
@@ -164,9 +163,10 @@ h1{
 }
 
 .card:hover{
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(116, 116, 116, 0.466);
+  color: white;
   transition-duration: 0.5s;
-  border: 1px solid rgb(255, 0, 43);
+  border: 1px solid gold;
 }
 
 .card img {

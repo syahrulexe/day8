@@ -8,7 +8,7 @@
 body {
  margin: 0;
   padding: 0; 
-  background-image: url(https://wallpapercrafter.com/desktop/94321-cyberpunk-neon-anime-girl-anime-artist-artwork-digital-art-hd-4k-pink.jpg);
+  background-image: url(https://4kwallpapers.com/images/wallpapers/mecha-girl-cyberpunk-girl-3d-yellow-background-3840x2160-6672.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -37,18 +37,15 @@ nav ul li a {
   color: rgb(85, 85, 85);
 }
 
-nav ul li a:hover {
-  color: white;
-  font-size: 22px;
-  transition: ease-in-out;
-  transition-delay: 0.1s;
-  transition-duration: 0.2s;
-}
+
 
 nav ul li .active {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   padding: 10px;
-  background-color: #000000dc;
+  border-bottom: 4px solid black;
+  border-bottom-style:ridge;
+  background-color: #00000013;
+  border-radius: 4px;
 }
 
 .nav-left {
@@ -185,7 +182,7 @@ button{
 }
 
 button:hover {
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
 }
 
 #barsmenu{
