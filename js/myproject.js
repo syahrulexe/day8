@@ -31,8 +31,6 @@ function addProject(event){
     
     let project = {
         projectName,
-        startDate,
-        endDate,
         description,
         checkboxHtml,
         checkboxCss,
